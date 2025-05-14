@@ -22,15 +22,15 @@ public class MyBot extends TelegramLongPollingBot {
             info(chatId, username, message);
             if (message.equals("/start")) {
                 try {
-                    execute(myBotService.menu(chatId));
+                    execute(myBotService.startmessage(chatId));
 
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
-            if(message.equals("/n")) {
+            if(message.equals("Uzbek")) {
                 try {
-                    execute(myBotService.menu1(chatId));
+                    execute(myBotService.menu(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }

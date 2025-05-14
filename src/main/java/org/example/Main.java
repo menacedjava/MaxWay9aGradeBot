@@ -11,7 +11,6 @@ public class Main {
             MyBotService service = new MyBotService();
             telegramBotsApi.registerBot(new MyBot(service));
             System.out.println("Telegram bot is running");
-            System.out.println("Hello world");
         } catch (TelegramApiException e) {
             throw new RuntimeException(e);
         }
